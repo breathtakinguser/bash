@@ -5,7 +5,7 @@ dpkg --add-architecture i386
 apt update
 apt install lib32gcc-s1 steamcmd
 apt install steamcmd
-login fansomid
+#login fansomid
 #You can then download games by typing:
 #force_install_dir <where you want to download the game files>
 #app_update <game's appid> validate
