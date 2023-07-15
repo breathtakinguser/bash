@@ -1,0 +1,8 @@
+#!/bin/bash
+add-apt-repository multiverse
+apt install software-properties-common
+dpkg --add-architecture i386
+apt update
+apt install lib32gcc-s1 steamcmd
+apt install steamcmd
+login fansomid
