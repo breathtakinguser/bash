@@ -1,5 +1,4 @@
 #! /bin/bash
-
 #username
 #sudo adduser omid
 #sudo usermod -aG sudo omid
