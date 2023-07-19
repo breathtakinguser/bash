@@ -7,8 +7,7 @@ apt update
 apt upgrade -y
 #swap
 echo Example: 4G
-read -p "How much swapspace: " swap
-fallocate -l $swap /swapfile
+fallocate -l 4G /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
@@ -19,12 +18,7 @@ sysctl vm.vfs_cache_pressure=50
 echo sysctl vm.swappiness=10 >> /etc/sysctl.conflubuntu-desktop
 echo vm.vfs_cache_pressure=50 >> /etc/sysctl.conf
 #DE X2go
-echo mate: mate-desktop-enviroment-extras
-echo xfce: xubuntu-desktop
-echo lxde: lubuntu-desktop
-echo openbox: sudo apt-get install openbox obconf
-read -p "Desktop Enviroment: " de
-apt install $de -y
+apt install xubuntu-desktop -y
 apt install x2goserver x2goserver-xsession -y
 echo 'END'
 reboot
