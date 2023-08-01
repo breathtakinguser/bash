@@ -19,6 +19,6 @@ echo sysctl vm.swappiness=10 >> /etc/sysctl.conflubuntu-desktop
 echo vm.vfs_cache_pressure=50 >> /etc/sysctl.conf
 #DE X2go
 apt install xubuntu-desktop -y
-apt install x2goserver x2goserver-xsession -y
+apt install x2goserver x2goserver-xsession axel firefox gdebi -y
 echo 'END'
 reboot
