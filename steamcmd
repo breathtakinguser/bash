@@ -1,4 +1,6 @@
 #!/bin/bash
+apt update
+apt upgrade -y
 add-apt-repository multiverse
 apt install software-properties-common
 dpkg --add-architecture i386
