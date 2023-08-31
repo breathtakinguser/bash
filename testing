@@ -20,5 +20,6 @@ echo vm.vfs_cache_pressure=50 >> /etc/sysctl.conf
 #DE X2go
 apt install xubuntu-desktop -y
 apt install x2goserver x2goserver-xsession axel firefox gdebi -y
+snap install p7zip-desktop
 echo 'END'
 reboot
