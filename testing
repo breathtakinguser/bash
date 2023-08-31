@@ -1,10 +1,10 @@
 #! /bin/bash
 #username
-#sudo adduser omid
-#sudo usermod -aG sudo omid
+#sudo adduser animegirl
+#sudo usermod -aG sudo animegirl
 #sudo sed -i 's/ALL=(ALL:ALL)/ALL=(ALL:ALL) NOPASSWD:ALL/g' /etc/sudoers
 apt update
-apt upgrade -y
+DEBIAN_FRONTEND=noninteractive apt -y upgrade
 #swap
 echo Example: 4G
 fallocate -l 4G /swapfile
