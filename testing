@@ -1,8 +1,4 @@
 #! /bin/bash
-#username
-#sudo adduser animegirl
-#sudo usermod -aG sudo animegirl
-#sudo sed -i 's/ALL=(ALL:ALL)/ALL=(ALL:ALL) NOPASSWD:ALL/g' /etc/sudoers
 apt update
 DEBIAN_FRONTEND=noninteractive apt -y upgrade
 #swap
